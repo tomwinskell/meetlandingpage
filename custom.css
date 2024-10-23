@@ -7030,7 +7030,7 @@ body {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 500;
-  src: url("../assets/fonts/red-hat-display-v19-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./assets/fonts/red-hat-display-v19-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* red-hat-display-900 - latin */
 @font-face {
@@ -7038,7 +7038,7 @@ body {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
-  src: url("../assets/fonts/red-hat-display-v19-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./assets/fonts/red-hat-display-v19-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 .font--xl {
   font-family: "Red Hat Display" !important;
