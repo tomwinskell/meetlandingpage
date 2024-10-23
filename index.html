@@ -16,50 +16,61 @@
   </head>
   <body>
     <header>
-      <div class="header container-fluid">
-        <div class="row">
-          <div class="col-lg text-center my-5">
+      <div class="header container-fluid p-0">
+          <div class="header__logo-container text-center my-5">
             <img src="./assets/images/logo.svg" alt="" />
           </div>
-          <div
-            class="header__img__container d-flex justify-content-center mb-5 m-0"
-          >
+          <div class="d-lg-none d-flex justify-content-center m-0">
             <img
-              class="header__img"
+              class="header__img-mobile"
               src="./assets/images/tablet/image-hero.png"
-              alt=""
+              alt="meet chat hero image"
             />
           </div>
-          <div
-            class="col-lg d-flex flex-column align-items-center"
-          >
-            <div class="header__textarea text-center">
-              <h1 class="header__title font--xl mb-4">
-                Group Chat</br> for Everyone
-              </h1>
-              <p class="header__text font mb-4">
-                Meet makes it easy to connect with others face-to-face virtually
-                aand collaborate across any device.
-              </p>
-            </div>
-            <div class="row text-center">
-              <div class="col-sm-auto">
-                <button
-                  class="btn btn--cyan rounded-pill font--sm mb-3 px-5 py-3"
-                >
-                  Download <span class="text-cyan">v1.3</span>
-                </button>
+          <div class="header__text-container d-flex flex-row align-content-between justify-content-center">
+
+              <div class="d-none d-lg-block d-flex align-items-start justify-content-end"><img
+                class="header__img-desktop"
+                src="./assets/images/desktop/image-hero-left.png"
+                alt="meet chat hero image"
+              /></div>
+
+              <div class="flex-fill p-5 d-flex flex-column align-items-center justify-content-center">
+                <div class="text-container__text-area text-center">
+                  <h1 class="font--xl mb-4">
+                    Group Chat</br> for Everyone
+                  </h1>
+                  <p class="font mb-4">
+                    Meet makes it easy to connect with others face-to-face virtually
+                    aand collaborate across any device.
+                  </p>
+                </div>
+                <div class="row text-center">
+                  <div class="col-sm-auto">
+                    <button
+                      class="btn btn--cyan rounded-pill font--sm mb-3 px-5 py-3"
+                    >
+                      Download <span class="text-cyan">v1.3</span>
+                    </button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button
+                      class="btn btn--purple rounded-pill font--sm mb-3 px-5 py-3"
+                    >
+                      What is it?
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="col-sm-auto">
-                <button
-                  class="btn btn--purple rounded-pill font--sm mb-3 px-5 py-3"
-                >
-                  What is it?
-                </button>
-              </div>
+
+              <div class="d-none d-lg-block d-flex align-items-end justify-content-start"><img
+                class="header__img-desktop"
+                src="./assets/images/desktop/image-hero-right.png"
+                alt="meet chat hero image"
+              />
             </div>
+
           </div>
-        </div>
       </div>
     </header>
 
@@ -102,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="feature__textarea container text-center px-4">
+      <div class="feature__text-area container text-center px-4">
         <h2 class="feature__detail font--cyan mb-3">Built for modern use</h2>
         <h3 class="feature__title font--lg mb-4">
           Smarter meetings,</br> all in one place
@@ -128,20 +139,21 @@
       </div>
 
       <div class="footer__container bg-image">
-        <div class="footer__mask container-fluid d-flex justify-content-center text-center text-md-start py-5 ">
-          <div class="footer__textarea row px-4">
-            <div class="col-md p-0">
+        <div class="footer__mask container-fluid d-flex justify-content-center text-center text-lg-start py-5 ">
+          <div class="footer__text-area d-flex flex-column flex-lg-row">
+            <div class="px-5">
               <h3 class="footer__heading font--lg font--white mb-4">
-                Experience more together
+                Experience more</br> together
               </h3>
             </div>
-            <div class="col-md p-0">
-              <p class="footer__text font font--white mb-4">
-                Stay connected with reliable HD meetings and unlimited one-on-one
-                and group video sessions.
-              </p>
+            <div style="max-width: 20vw" class="flex-grow-0 flex-shrink-1 p-0">
+
+                <p class="font font--white mb-4">
+                  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+                </p>
+
             </div>
-            <div class="col-md-auto p-0">
+            <div class="flex-shrink-0 text-nowrap px-5">
               <button
                 class="btn btn--purple rounded-pill font--sm font--white px-5 py-3"
               >
