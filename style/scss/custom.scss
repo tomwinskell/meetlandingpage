@@ -2,7 +2,7 @@
 $enable-gradients: false;
 $enable-shadows: false;
 
-$body-font-family: 'Red Hat Display';
+$font-family-base: 'Red Hat Display' !default;
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../bootstrap/scss/functions";
