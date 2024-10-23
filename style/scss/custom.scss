@@ -1,19 +1,6 @@
-// Override ../bootstrap's Sass default variables
-//
-// Nearly all variables in ../bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import ../bootstrap's source Sass files.
-//
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, you can either change
-// `$body-color` or write more CSS that override's ../bootstrap's CSS like so:
-// `body { color: red; }`.
-
 // Toggle global options
 $enable-gradients: false;
 $enable-shadows: false;
-
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../bootstrap/scss/functions";
@@ -33,50 +20,15 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 // 6. Optionally include any other parts as needed
 @import "../bootstrap/scss/utilities";
-@import "../bootstrap/scss/root";
 @import "../bootstrap/scss/reboot";
 @import "../bootstrap/scss/type";
 @import "../bootstrap/scss/images";
 @import "../bootstrap/scss/containers";
 @import "../bootstrap/scss/grid";
-// @import "../bootstrap/scss/tables";
-// @import "../bootstrap/scss/forms";
 @import "../bootstrap/scss/buttons";
-// @import "../bootstrap/scss/transitions";
-// @import "../bootstrap/scss/dropdown";
-// @import "../bootstrap/scss/button-group";
-// @import "../bootstrap/scss/nav";
-// @import "../bootstrap/scss/navbar"; // Requires nav
-// @import "../bootstrap/scss/card";
-
-// @import "../bootstrap/scss/breadcrumb";
-// @import "../bootstrap/scss/accordion";
-// @import "../bootstrap/scss/pagination";
-// @import "../bootstrap/scss/badge";
-// @import "../bootstrap/scss/alert";
-// @import "../bootstrap/scss/progress";
-// @import "../bootstrap/scss/list-group";
-@import "../bootstrap/scss/close";
-// @import "../bootstrap/scss/toasts";
-@import "../bootstrap/scss/modal"; // Requires transitions
-// @import "../bootstrap/scss/tooltip";
-@import "../bootstrap/scss/popover";
-// @import "../bootstrap/scss/carousel";
-// @import "../bootstrap/scss/spinners";
-@import "../bootstrap/scss/offcanvas"; // Requires transitions
-// @import "../bootstrap/scss/placeholders";
-
-// Helpers
-// @import "../bootstrap/scss/helpers";
 
 // Utilities
 @import "../bootstrap/scss/utilities/api";
-
-//
-// Custom styles
-//
-
-// @import "icon-list";
 
 * {
   padding: 0;
@@ -88,8 +40,10 @@ body {
   --cyan-transparent: hsl(192, 37%, 48%, 0.9);
   --cyan-600: hsl(192, 37%, 48%);
   --cyan-300: hsl(192, 90%, 77%);
+  --cyan-hover: #71C0D4;
   --purple-600: hsl(268, 34%, 53%);
   --purple-300: hsl(268, 100%, 86%);
+  --purple-hover: #B18BDD;
   --slate-900: hsl(240, 21%, 20%);
   --slate-600: hsl(240, 10%, 57%);
   --slate-300: hsl(240, 18%, 85%);
@@ -165,6 +119,7 @@ body {
   letter-spacing: 0;
 }
 
+// header
 .header__img-mobile {
   object-fit: cover;
   width: clamp(30rem, 115vw, 50rem);
@@ -173,23 +128,27 @@ body {
 .header__img-desktop {
   object-fit: contain;
   min-width: 390px;
-  width: 110%;
 }
 
 .header__img-container-mobile, .header__img-container-desktop {
   overflow: hidden;
 }
 
+// buttons
 .btn--purple {
   --bs-btn-font-weight: 600;
   --bs-btn-color: var(--white);
   --bs-btn-bg: var(--purple-600);
+  --bs-btn-hover-color: var(--white);
+  --bs-btn-hover-bg: var(--purple-hover);
 }
 
 .btn--cyan {
   --bs-btn-font-weight: 600;
   --bs-btn-color: var(--white);
   --bs-btn-bg: var(--cyan-600);
+  --bs-btn-hover-color: var(--white);
+  --bs-btn-hover-bg: var(--cyan-hover);
 }
 
 .text-cyan {
@@ -200,33 +159,13 @@ body {
   color: var(--purple-300)
 }
 
+// footer
 .footer__mask {
   background-color: var(--cyan-transparent);
 }
 
 .footer__container {
   grid-area: 2 / 1 / 4 / 4;
-}
-
-.bg-image {
-  background-image: url('./assets/images/mobile/image-footer.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.feature__img {
-  margin: .5rem;
-}
-
-.divider__line {
-  height: 80px;
-  width: 50%;
-}
-
-.divider__circle {
-  height: 56px;
-  width: 56px
 }
 
 .footer {
@@ -240,16 +179,52 @@ body {
   align-self: end;
   z-index: 1;
 }
+
+.bg-image {
+  background-image: url('./assets/images/mobile/image-footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// feature
+.feature__img {
+  margin: .5rem;
+}
+
+// dividers
+.divider__line {
+  height: 80px;
+  width: 50%;
+}
+
+.divider__circle {
+  height: 56px;
+  width: 56px
+}
+
+// misc
 .text-container__text-area {
   width: 500px;
 }
 
 .feature__text-area, .footer__text-area {
-  max-width: 500px;
+  max-width: clamp(400px, 90vw, 600px);
+}
+
+// media queries
+@include media-breakpoint-up(md) {
+  .bg-image {
+    background-image: url('./assets/images/tablet/image-footer.jpg');
+  }
 }
 
 @include media-breakpoint-up(lg) {
   .footer__text-area {
-    max-width: 75vw;
+    max-width: 90vw;
+  }
+
+  .bg-image {
+    background-image: url('./assets/images/desktop/image-footer.jpg');
   }
 }
