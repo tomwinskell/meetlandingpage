@@ -2,6 +2,8 @@
 $enable-gradients: false;
 $enable-shadows: false;
 
+$body-font-family: 'Red Hat Display';
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../bootstrap/scss/functions";
 
@@ -71,7 +73,7 @@ body {
 
 // typoraphy
 .font--xl {
-  font-family: 'Red Hat Display';
+  font-family: 'Red Hat Display' !important;
   font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 900;
   line-height: 1.1em;
@@ -80,7 +82,7 @@ body {
 }
 
 .font--lg {
-  font-family: 'Red Hat Display';
+  font-family: 'Red Hat Display' !important;
   font-size: clamp(2rem, 5vw, 2.5rem);
   font-weight: 900;
   line-height: 1.1em;
