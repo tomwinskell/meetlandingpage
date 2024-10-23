@@ -7041,7 +7041,6 @@ body {
   src: url("./assets/fonts/red-hat-display-v19-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 .font--xl {
-  font-family: "Red Hat Display" !important;
   font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 900;
   line-height: 1.1em;
@@ -7050,7 +7049,6 @@ body {
 }
 
 .font--lg {
-  font-family: "Red Hat Display" !important;
   font-size: clamp(2rem, 5vw, 2.5rem);
   font-weight: 900;
   line-height: 1.1em;
@@ -7059,7 +7057,6 @@ body {
 }
 
 .font--cyan {
-  font-family: "Red Hat Display";
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1em;
@@ -7069,7 +7066,6 @@ body {
 }
 
 .font {
-  font-family: "Red Hat Display";
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.5em;
@@ -7082,7 +7078,6 @@ body {
 }
 
 .font--sm {
-  font-family: "Red Hat Display";
   font-size: 1rem;
   font-weight: 900;
   line-height: 1.5em;
