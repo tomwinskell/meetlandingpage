@@ -1,6 +1,6 @@
 # Frontend Mentor - Meet landing page solution
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -46,12 +46,12 @@ Users should be able to:
 
 ### What I learned
 
-- Wow, what a journey. This took me longer than expected but I wanted to work with Bootstrap.
-- I like working mostly in the html file, it saves a lot of switching back and forth between html and css. I think it would be a lot quicker once you know all of the class names and intricacies of Bootstrap.
-- This layout was relatively challenging because of the differences between layouts for the screen sizes. That took a lot more time than I anticipated.
-- Figured out that CSS Grid can be used to effectively overlay items. I really enjoyed doing that. I wrote a blog post about it. [http://tomwinskell.simple.ink/](https://tomwinskell.simple.ink/overlay-elements-with-css-grid-122eebbfd13f80f09bafe3492f9a942b)
+- Took longer than expected because I was learning Bootstrap.
+- Working mostly in the html file saves switching back and forth between html and css. Will be quicker once I know all of the class names and specifics of Bootstrap.
+- Layout was challenging because of the different layouts for each screen size.
+- CSS Grid can be used to overlay items. Blog post here: [http://tomwinskell.simple.ink/](https://tomwinskell.simple.ink/overlay-elements-with-css-grid-122eebbfd13f80f09bafe3492f9a942b).
 
-Here's a code snipet for the overlay footer. Screenshot below also.
+CSS code snipet for footer with overlaid elements. Screenshot below.
 
 ```css
 .footer {
@@ -73,17 +73,13 @@ Here's a code snipet for the overlay footer. Screenshot below also.
 
 ![screenshot-footer](https://raw.githubusercontent.com/tomwinskell/meetlandingpage/refs/heads/main/assets/screenshots/screenshot-footer.png)
 
-
 ### Continued development
 
 - BEM
 - CSS Grid
-- [OOCSS](https://github.com/stubbornella/oocss/wiki)
 - Bootstrap
 
 ### Useful resources
 
-- [MindBEMding – getting your head ’round BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
-- [About HTML semantics and front-end architecture](https://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
-- [BEM — is a methodology that helps you to create reusable components and code sharing in front‑end development](https://getbem.com/)
-- [CSS Grid Layout Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [https://getbootstrap.com/](https://getbootstrap.com/)
+- [http://tomwinskell.simple.ink/](https://tomwinskell.simple.ink/overlay-elements-with-css-grid-122eebbfd13f80f09bafe3492f9a942b).
