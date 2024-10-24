@@ -7085,17 +7085,11 @@ body {
 }
 
 .header__img-mobile {
-  object-fit: cover;
   width: clamp(30rem, 115vw, 50rem);
 }
 
 .header__img-desktop {
-  object-fit: contain;
-  min-width: 390px;
-}
-
-.header__img-container-mobile, .header__img-container-desktop {
-  overflow: hidden;
+  width: clamp(390px, 100%, 500px);
 }
 
 .btn--purple {
@@ -7164,11 +7158,11 @@ body {
 }
 
 .text-container__text-area {
-  width: 500px;
+  width: clamp(300px, 90vw, 600px);
 }
 
 .feature__text-area, .footer__text-area {
-  max-width: clamp(400px, 90vw, 600px);
+  max-width: clamp(300px, 90vw, 600px);
 }
 
 @media (min-width: 768px) {
