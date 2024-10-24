@@ -182,6 +182,7 @@ body {
 // feature
 .feature__img {
   margin: .5rem;
+  max-height: 200px;
 }
 
 // dividers
@@ -219,9 +220,4 @@ body {
   .bg-image {
     background-image: url('./assets/images/desktop/image-footer.jpg');
   }
-
-  // .text-container__text-area {
-  //   max-width: none;
-  //   min-width: 500px;
-  // }
 }

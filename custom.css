@@ -7145,6 +7145,7 @@ body {
 
 .feature__img {
   margin: 0.5rem;
+  max-height: 200px;
 }
 
 .divider__line {
